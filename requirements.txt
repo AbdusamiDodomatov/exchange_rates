@@ -1,3 +1,9 @@
+fastapi>=0.100.0
+uvicorn>=0.23.0
 httpx>=0.23.0
 playwright>=1.40.0
 python-dotenv>=1.0.0
+google-genai>=0.9.0  # для Gemini API
+beautifulsoup4>=4.12.2
+lxml>=4.9.3
+uvicorn[standard]>=0.23.0
