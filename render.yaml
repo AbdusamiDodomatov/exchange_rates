@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: exchange-rates
+    env: python
+    plan: free
+    buildCommand: |
+      python -m pip install --upgrade pip
+      pip install -r requirements.txt
+      python -m playwright install chromium
+    startCommand: python -m uvicorn api_rates:app --host 0.0.0.0 --port 8000
